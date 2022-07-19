@@ -1,0 +1,30 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel = "styles">
+	<link rel="stylesheet" href = "/app.css"
+</head>
+
+<body>
+	<div class = "flex-container">
+		<div class = "container">
+			<h1>Register a new pokemon</h1>
+ 			<p class="lead"> There are <strong><%= count %></strong> Pokemon in the pokedex. </p>
+ 			<form method="POST" action='/register'>				
+  				<ul id="fieldList">
+  				  <li>
+  				    <input name="name[]" type="text" placeholder="Pokemon Name" required/>
+  				  </li>
+  				  <li>
+  				    <input name="type_1[]" type="text" placeholder="Type of Pokemon" required/>
+  				  </li>
+  				  <li>
+  				    <input name="type_2[]" type="text" placeholder="Second Type of Pokemon">
+  				  </li>
+  				</ul>
+ 				<button>Register Now</button>
+			</form>
+		</div>
+	</div>	
+</body>
+
+	
+	
